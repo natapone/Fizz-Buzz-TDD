@@ -4,5 +4,6 @@ Divisibility by 5 return 'Buzz'
 Divisibility by 3,5 return 'Fizz-Buzz'
 the rest return input
 
-Test: $ phpunit TestFizzBuzzTdd.php
+Test:  $ phpunit TestFizzBuzzTdd.php
+Usage: $ php exec-Fizz-Buzz.php
 
