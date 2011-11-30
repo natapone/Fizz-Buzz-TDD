@@ -5,10 +5,11 @@
         $buzz_int = 5;
         
         # find Greatest common divisor
-        $gcd = $fizz_int;
+        $gcd = $fizz_int * $buzz_int;
         
         # set of operations
         $operations = array(
+                $gcd        => 'Fizz-Buzz',
                 $fizz_int   => 'Fizz',
                 $buzz_int   => 'Buzz',
         );
