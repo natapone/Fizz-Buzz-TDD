@@ -14,6 +14,9 @@
                 $buzz_int   => 'Buzz',
         );
         
+        # default answer is = input
+        $ans = $input;
+        
         # calculate
         foreach ($operations as $operation => $ans_str) {
             if($input%$operation == 0 and $input != 0) {
