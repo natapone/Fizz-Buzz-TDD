@@ -1,0 +1,5 @@
+Description: create Fizz-Buzz algorithm by Test driven development
+Divisibility by 3 return 'Fizz'
+Divisibility by 5 return 'Buzz'
+Divisibility by 3,5 return 'Fizz-Buzz'
+the rest return input
