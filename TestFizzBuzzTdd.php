@@ -4,14 +4,18 @@ require_once "Fizz-Buzz.php";
 
 class TestFizzBuzz extends PHPUnit_Framework_TestCase {
     /**
-     * @dataProvider provider
+     * @dataProvider providerFizz
      */
-    public function testOne($ans, $input) {
-        $this->assertEquals($ans, fizz_buzz($input));
+    public function testFizz($ans, $input) {
+        $this->assertEquals($ans, fizz_buzz($input),'Fizz fail');
     }
 
-    public function provider() {
-        return array();
+    public function providerFizz() {
+        return array(
+            array('Fizz', 3),
+            array('Fizz', 9),
+            array('Fizz', 36),
+        );
     }
 }
 
