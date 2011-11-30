@@ -24,6 +24,13 @@ class TestFizzBuzz extends PHPUnit_Framework_TestCase {
         $this->assertEquals($ans, fizz_buzz($input),'Fizz-Buzz fail');
     }
     
+    /**
+     * @dataProvider providerNonFzBz
+     */
+    public function testNonFzBz($ans, $input) {
+        $this->assertEquals($ans, fizz_buzz($input),'non Fizz-Buzz fail');
+    }
+    
     public function providerFizz() {
         return array(
             array('Fizz', 3),
@@ -45,6 +52,14 @@ class TestFizzBuzz extends PHPUnit_Framework_TestCase {
             array('Fizz-Buzz', 15),
             array('Fizz-Buzz', 30),
             array('Fizz-Buzz', 45),
+        );
+    }
+    
+    public function providerNonFzBz() {
+        return array(
+            array(0, 0),
+            array(2, 2),
+            array(44, 44),
         );
     }
 }
