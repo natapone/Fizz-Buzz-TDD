@@ -1,0 +1,8 @@
+---
+name: fizzbuzz
+version: 0.1
+tests: t/
+test_requires:
+    - phpunit
+    - php5-cli
+
